@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0D1117;
+    font-family: Montserrat, sans-serif
+}
+
+.App {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 315px;
+    height: 65px;
+    font-size: 25px;
+    font-weight: bold;
+    color:#4793FF;
+}
+
+.headerLogo {
+    width: 65px;
+    height: 65px;
+    background-image: url('./img/Header\ logo.png');
+}
+
+.cities {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+
+select {
+    width: 195px;
+    height: 37px;
+    background-color: #4F4F4F;
+    font-size: 16px;
+    color: white;
+    padding: 9px 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+.today {
+    background: #4F4F4F;
+    width: 400px;
+    height: 300px;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+
+.todayContent {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-between;
+    width: 360px;
+    margin: 0 auto;
+}
+
+.todayWeatherSunny {
+    background-image: url('./img/Group.png');
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    margin-top: 46px;
+}
+
+.todayWeatherCloudy {
+    background-image: url('./img/Cloudy.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    margin-top: 46px;
+}
+
+.todayWeatherSunnyCloudy {
+    background-image: url('./img/pngwing.com.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    margin-top: 46px;
+}
+
+.todayWeatherRain {
+    background-image: url('./img/rain.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    margin-top: 46px;
+}
+
+h1 {
+    font-size: 96px;
+    color: #4793FF;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.weekDay {
+    color: white;
+    font-size: 40px;
+    line-height: 49px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 31px;
+    height: 75px;
+}
+
+.info p {
+    line-height: 30.5px;
+    color:#939CB0;
+    font-size: 25px;
+}
+
+.dopInfo {
+    width: 750px;
+    height: 300px;  
+    background: #4F4F4F;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+}
+
+.dopInfoContent {
+    display: flex;
+    align-items: center;
+    background: url('./img/image\ 1.png') right top no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+} 
+
+.todayPart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.infoItem {
+    width: 38px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 32px;
+    list-style: none;
+    height: 220px;
+    width: 38px;
+}
+
+.icon1 {
+    background-image: url('./img/GroupIcon1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon2 {
+    background-image: url('./img/GroupIcon2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon3 {
+    background-image: url('./img/GroupIcon3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.icon4 {
+    background-image: url('./img/GroupIcon4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.infoListTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    list-style: none;
+    height: 200px;
+    width: 100px;
+}
+.titleItem {
+    width: 100px;
+    height: 18px;
+    line-height: 17px;
+    font-size: 14px;
+    color: #939CB0;
+    font-weight: 400;
+}
+
+.infoListSet {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    list-style: none;
+    height: 200px;
+    width: 500px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #939CB0;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.dayWeather button {
+    margin-right: 15px;
+}
+
+.active {
+    background: #4793FF;
+}
+
+.containerDay {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: auto;
+    width: 1200px;
+    min-height: 240px;
+    background: #4F4F4F;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 0px 0px 20px 20px;
+    list-style: none;
+}
+
+.dayItem {
+    min-width: 149px;
+    height: 200px;
+    background: #2E3035;
+    border-radius: 10px;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.wrap {
+    margin: 11px 11px 13px 11px;
+}
+
+.dayOfTheWeek {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFF;
+    margin-bottom: 7px;
+}
+
+.date {
+    color: #939CB0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 13px;
+}
+
+.iconWeather {
+    width: 44px;
+    height: 46px;
+    background-image: url('./img/iconWeather.png');
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.dayTemp {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFF;
+}
+
+.nightTemp {
+    color: #939CB0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+
+.weath {
+    color: #939CB0;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 6px;
+}
+
+
